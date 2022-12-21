@@ -21,8 +21,8 @@ export default class atlasClass {
         newDiv.className = "m-auto col-md-8 col-xxl-5 border-3";
         document.querySelector(this.parent).append(newDiv);
         newDiv.innerHTML = `
-        <h3 class="name text-center p-3"></h3>
-     <div class="p-5" style="box-shadow: 0px 0px 15px 1px #FFFFFF;">
+        <h3 class="div-xx text-center p-3"></h3>
+    <div class="div-render p-3 p-md-5">
         <div class="row pb-3 text-center ">
             <div class="col-md-6 ">
                 <h2>${this.name}</h2>
@@ -33,11 +33,11 @@ export default class atlasClass {
                 <h6><b> Capital :</b> ${this.Capital}</h6>
             </div>
             <div class="pt-3 col-md-6">
-                 <img class="img-fluid" style="box-shadow: 0px 0px 5px 1px #FFFFFF;" height="180" width="280" src="${this.img}" alt="${this.name}">
+                 <img class="img-fluid" src="${this.img}" alt="${this.name}">
             </div>
         </div>
         <div>
-           <iframe class="mt-4 border border-secondary col-12" height='400' style=" box-shadow: 0px 0px 5px 1px #FFFFFF;"  src="https://maps.google.com/maps?q=${this.latlng1},${this.latlng2}&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+           <iframe class="mt-4 border border-secondary col-12" src="https://maps.google.com/maps?q=${this.latlng1},${this.latlng2}&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
            <br>
            <br>
            <h5 class="text-center"><b>States with borders</b><div class="borders_div"></div></h5>  
@@ -53,7 +53,7 @@ export default class atlasClass {
             a.innerHTML = await bordersApi(item) + " ";
 
             a.addEventListener("click", () => {
-                 doApi(a.innerHTML);
+                doApi(a.innerHTML);
             })
         })
     }

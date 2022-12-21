@@ -56,9 +56,9 @@ export const declareEvents = () => {
             doApi(id_input.value);
         }
         else {
-            document.querySelector(".name").innerHTML =
+            document.querySelector(".div-xx").innerHTML =
                 "There is not such country... <br>  !אין ולא תהיה כזו מדינה ";
-            document.querySelector(".name").style.color = "red";
+            document.querySelector(".div-xx").style.color = "red";
         }
     })
 }

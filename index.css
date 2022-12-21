@@ -1,0 +1,54 @@
+main {
+    padding-top: 100px;
+    padding: 30px;
+    padding-bottom: 10%;
+    background-image: url(img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+    height: 100%;
+}
+.div-render{
+    box-shadow: 0px 0px 15px 1px #FFFFFF;
+}
+
+.whatsapp-s {
+    display: none;
+}
+
+img {
+    height: 180px;
+    width: 280;
+    box-shadow: 0px 0px 5px 1px #FFFFFF;
+}
+
+iframe {
+    height: 400px;
+    box-shadow: 0px 0px 5px 1px #FFFFFF;
+}
+
+
+@media (max-width:768px) {
+    main {
+        background-image: url(img/S1.jpg);
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .whatsapp-xl {
+        display: none;
+    }
+
+    .whatsapp-s {
+        display: block;
+    }
+    .div-xx{
+        margin-top: 30px;
+    }
+
+}
+
+
+
